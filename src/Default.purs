@@ -1,6 +1,7 @@
 module Default where
 
 import Prelude
+import Data.List (List)
 import Data.Maybe (Maybe(Nothing))
 
 class Default a where
@@ -22,6 +23,9 @@ instance defaultBoolean :: Default Boolean where
   def = false
 
 instance defaultArray :: Default (Array a) where
+  def = mempty
+
+instance defaultList :: Default (List a) where
   def = mempty
 
 instance defaultUnit :: Default Unit where
