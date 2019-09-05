@@ -1,6 +1,6 @@
 # purescript-data-default
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-data-default.svg)](https://github.com/thought2/purescript-data-default/releases)
+[![Latest release](http://img.shields.io/github/release/thought2/purescript-data-default.svg)](https://github.com/thought2/purescript-data-default/releases)
 
 Default values for purescript types. Inspired by Haskell's [data-default package](https://hackage.haskell.org/package/data-default)
 
