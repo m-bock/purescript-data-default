@@ -9,6 +9,7 @@ import Prim.RowList as RL
 import Record as Record
 import Type.Data.RowList (RLProxy(..))
 
+-- | Typeclass to provide a default value for a type
 class Default a where
   def :: a
 
