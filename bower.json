@@ -1,11 +1,11 @@
 {
-    "name": "purescript-my-project",
+    "name": "purescript-data-default",
     "license": [
         "Apache-2.0"
     ],
     "repository": {
         "type": "git",
-        "url": "git@github.com:thought2/purescript-default.git"
+        "url": "git@github.com:thought2/purescript-data-default.git"
     },
     "ignore": [
         "**/.*",
