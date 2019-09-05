@@ -5,7 +5,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "http://github.com/thought2/purescript-default"
+        "url": "git@github.com:thought2/purescript-default.git"
     },
     "ignore": [
         "**/.*",
