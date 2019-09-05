@@ -10,4 +10,8 @@ You can edit this file as you like.
     ./packages.dhall
 , sources =
     [ "src/**/*.purs", "test/**/*.purs" ]
+, license =
+    "Apache-2.0"
+, repository =
+    "http://github.com/thought2/purescript-default"
 }
