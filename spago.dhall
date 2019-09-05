@@ -13,5 +13,5 @@ You can edit this file as you like.
 , license =
     "Apache-2.0"
 , repository =
-    "http://github.com/thought2/purescript-default"
+    "git@github.com:thought2/purescript-default.git"
 }
