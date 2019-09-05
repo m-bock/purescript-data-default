@@ -3,6 +3,8 @@ module Default where
 import Prelude
 import Data.List (List)
 import Data.Maybe (Maybe(Nothing))
+import Data.Monoid (class MonoidRecord)
+import Prim.RowList as RL
 
 class Default a where
   def :: a
@@ -30,3 +32,6 @@ instance defaultList :: Default (List a) where
 
 instance defaultUnit :: Default Unit where
   def = unit
+
+instance defRecord :: (RL.RowToList row list, MonoidRecord list row row) => Default (Record row) where
+  def = mempty
