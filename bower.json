@@ -1,0 +1,22 @@
+{
+    "name": "purescript-my-project",
+    "license": [
+        "Apache-2.0"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/thought2/purescript-default"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-lists": "^v5.4.1",
+        "purescript-maybe": "^v4.0.1",
+        "purescript-psci-support": "^v4.0.0",
+        "purescript-record": "^v2.0.1"
+    }
+}
