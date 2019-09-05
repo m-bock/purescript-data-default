@@ -1,6 +1,6 @@
 module Example where
 
-import Default
+import Data.Default
 import Data.Maybe (Maybe)
 
 -- Has value 1

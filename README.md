@@ -1,22 +1,25 @@
-# purescript-default
+# purescript-data-default
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-default.svg)](https://github.com/purescript/purescript-default/releases)
+[![Latest release](http://img.shields.io/github/release/purescript/purescript-data-default.svg)](https://github.com/purescript/purescript-data-default/releases)
 
 Default values for purescript types. Inspired by Haskell's [data-default package](https://hackage.haskell.org/package/data-default)
 
 ## Installation
 
 ```
-bower install purescript-default
+bower install purescript-data-default
 ```
 
 ## Documentation
 
-Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-default).
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-data-default).
 
 ## Example
 
 ```
+
+import Data.Default
+import Data.Maybe (Maybe)
 
 -- Has value 1
 x :: Int
