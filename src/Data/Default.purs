@@ -45,7 +45,7 @@ instance defaultRecord ::
   def = gDef (RLProxy :: RLProxy list)
 
 -- RECORD
-class GDefault (row :: #Type) (list :: RL.RowList) | list -> row where
+class GDefault (row :: Row Type) (list :: RL.RowList Type) | list -> row where
   gDef :: RLProxy list -> Record row
 
 instance gDefNil :: GDefault () RL.Nil where
