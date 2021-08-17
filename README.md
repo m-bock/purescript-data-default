@@ -7,7 +7,7 @@ Default values for purescript types. Inspired by Haskell's [data-default package
 ## Installation
 
 ```
-bower install purescript-data-default
+spago install data-default
 ```
 
 ## Documentation
