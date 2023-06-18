@@ -4,7 +4,7 @@ You can edit this file as you like.
 -}
 { name = "data-default"
 , dependencies =
-  [ "assert", "lists", "maybe", "psci-support", "record" ]
+  [ "assert", "lists", "maybe", "record", "effect", "prelude" ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 , license = "Apache-2.0"
