@@ -16,12 +16,12 @@ Module documentation is [published on Pursuit](http://pursuit.purescript.org/pac
 
 ## Example
 
-```
+```hs
 
 import Data.Default
 import Data.Maybe (Maybe)
 
--- Has value 1
+-- Has value 0
 x :: Int
 x = def
 
