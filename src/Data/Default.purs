@@ -2,12 +2,12 @@ module Data.Default where
 
 import Prelude
 import Data.List (List)
-import Data.Maybe (Maybe(Nothing))
-import Data.Symbol (class IsSymbol, SProxy(..), reflectSymbol)
+import Data.Maybe (Maybe(..))
+import Data.Symbol (class IsSymbol, reflectSymbol)
 import Prim.Row as Row
 import Prim.RowList as RL
 import Record as Record
-import Type.Data.RowList (RLProxy(..))
+import Type.Proxy (Proxy(..))
 
 -- | Typeclass to provide a default value for a type
 class Default a where
@@ -42,11 +42,11 @@ instance defaultRecord ::
   , RL.RowToList row list
   ) =>
   Default (Record row) where
-  def = gDef (RLProxy :: RLProxy list)
+  def = gDef (Proxy :: Proxy list)
 
 -- RECORD
-class GDefault (row :: #Type) (list :: RL.RowList) | list -> row where
-  gDef :: RLProxy list -> Record row
+class GDefault (row :: Row Type) (list :: RL.RowList Type) | list -> row where
+  gDef :: Proxy list -> Record row
 
 instance gDefNil :: GDefault () RL.Nil where
   gDef _ = {}
@@ -59,13 +59,11 @@ instance gDefCons ::
   , Row.Lacks field rowTail
   ) =>
   GDefault row (RL.Cons field value tail) where
-  gDef val =
+  gDef _ =
     let
-      sProxy :: SProxy field
-      sProxy = SProxy
+      sProxy :: Proxy field
+      sProxy = Proxy
 
-      fieldName = reflectSymbol sProxy
-
-      rest = gDef (RLProxy :: RLProxy tail)
+      rest = gDef (Proxy :: Proxy tail)
     in
       Record.insert sProxy def rest
