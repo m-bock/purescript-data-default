@@ -1,0 +1,17 @@
+workspace:
+  packageSet:
+    registry: 50.7.0
+  extraPackages: {}
+
+package:
+  name: data-default
+  dependencies:
+    - assert
+    - effect
+    - lists
+    - maybe
+    - prelude
+    - record
+  test:
+    main: Test.Main
+    dependencies: []
